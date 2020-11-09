@@ -1,0 +1,298 @@
+body{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1 {
+  font-family: "bebas_neuebook";
+  font-size: 5em;
+  letter-spacing: -2px;
+}
+
+.nav-item{
+  font-family: "bebas_neuebold";
+  font-size: 50px;
+  letter-spacing: -2px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+
+.nav-link{
+  color:black;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.nav-link:hover
+{
+  color:black;
+
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding:0;
+  max-width:100%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "bebas_neueregular";
+  font-size: 200px;
+  letter-spacing: 2px;
+  width:100%;
+}
+
+.padded1{
+  margin-right: 747px;
+  margin-left: 288px;
+  margin-bottom: -75px;
+  display: block;
+  font-size: 100px;
+  font-family: 'brandon-grotesque';
+  letter-spacing: 2px;
+}
+
+.padded2{
+  margin-left:250px;
+  letter-spacing: 5px;
+  font-family: 'bebas_neuebold';
+  font-size: 150px;
+  margin-bottom: 79px;
+  margin-right: 250px;
+  display: block;
+}
+
+#containertile {
+    width: 100%;
+    margin: 2em auto;
+}
+
+.projectscontainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.text{
+  width:40%;
+  font-family: "bebas_neueregular";
+  font-size: 200px;
+  letter-spacing: 2px;
+}
+
+.modules{
+  width:100%;
+  margin-left:60px;
+
+}
+
+#textcontactme{
+  width:40%;
+  font-family: "bebas_neueregular";
+  font-size: 200px;
+  letter-spacing: 2px;
+  margin-left:60px;
+  margin-top: 500px;
+}
+
+#modulescontactme{
+  width:100%;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 60px;
+  margin-top: 400px;
+  font-size: 40px;
+}
+
+#textprojects{
+  width:40%;
+  font-family: "bebas_neueregular";
+  font-size: 200px;
+  letter-spacing: 2px;
+  margin-left:60px;
+  margin-top: 500px;
+}
+
+#modulesprojects{
+  width:100%;
+  font-family: "bebas_neueregular";
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 60px;
+  margin-top: 400px;
+  font-size: 40px;
+
+}
+
+#texteducation{
+  width:40%;
+  font-family: "bebas_neueregular";
+  font-size: 180px;
+  letter-spacing: 2px;
+  margin-left:60px;
+  margin-top: 500px;
+}
+
+#moduleseducation{
+  width:100%;
+  font-family: "bebas_neueregular";
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 60px;
+  margin-top: 400px;
+  font-size: 40px;
+
+}
+
+#textaboutme{
+  width:40%;
+  font-family: "bebas_neueregular";
+  font-size: 150px;
+  letter-spacing: 2px;
+  margin-left:70px;
+  margin-top: 150px;
+}
+#modulesaboutme{
+  width:100%;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 60px;
+  margin-top: 400px;
+  font-size: 40px;
+}
+
+#emaillink{
+  display: block;
+}
+
+#profile{
+  border-radius: 50%;
+}
+
+.ml11 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+
+
+
+/*.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 20%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 {
+  top: 0;
+  left: 0;
+}
+*/
+.ml11 .letter {
+  font-family: brandon-grotesque, sans-serif;
+  display: inline-block;
+  line-height: 1em;
+  font-size: 150px;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  #textcontactme, #textprojects, #texteducation, .text {
+    font-size: 100px;
+  }
+  .ml11, .ml11 .letters, .ml11 .letter, .padded1 {
+    font-size: 60px;
+  }
+  .ml11 {
+    width: 400px;
+    margin-bottom: 50px;
+  }
+  .padded2 {
+    font-size: 80px;
+  }
+}
+
+
+/*Brandon Grotesque Regular
+
+font-family: brandon-grotesque, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Brandon Grotesque Regular Italic
+
+font-family: brandon-grotesque, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Brandon Grotesque Bold
+
+font-family: brandon-grotesque, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Brandon Grotesque Bold Italic
+
+font-family: brandon-grotesque, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+*/
